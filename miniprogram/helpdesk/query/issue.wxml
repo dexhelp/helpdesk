@@ -1,0 +1,19 @@
+<!--helpdesk/query/query.wxml-->
+<import src="template/pic.wxml" />
+<import src="template/user.wxml" />
+<import src="template/back.wxml" />
+<!-- <view>处理的逻辑状态图</view> -->
+<view><template is="picItem" data="{{...pic}}" /></view>
+<!-- 原始起点->网管接单->网管处理结果->用户反馈和评价 -->
+
+<!-- <view>用户提交的咨询单</view> -->
+<view><template is="userItem" data="{{...userinfo}}" /></view>
+
+<!-- <view>网管的处理结果以及处理的过程</view> -->
+<view><template is="userItem" data="{{...resultinfo}}" /></view>
+<!-- 1，提供SOP 或者建议---简单处理
+2，记录上门服务 -->
+
+<!-- <view>对网管处理的反馈</view> -->
+<view><template is="backItem" data="{{...back}}"/></view>
+<!-- 解决->评价 未解决->上门服务 -->

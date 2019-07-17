@@ -1,0 +1,23 @@
+<template name="picItem">
+<view class="weui-flex">
+  <view class="weui-flex__item">
+    <view class="placeholder word">第一步</view>
+  </view>
+  <view class="weui-flex__item">
+    <view class="placeholder word">第二步</view>
+  </view>
+  <view class="weui-flex__item">
+    <view class="placeholder">第三步</view>
+  </view>
+  <view class="weui-flex__item">
+    <view class="placeholder">第四步</view>
+  </view>
+</view>
+
+<view class="weui-flex">
+  <view class="weui-flex__item">
+  <!--示上面的内容比如 start Handler Result Evaluation -->
+    <view class="placeholder word2">处理人：管理员一号{{msg}}</view>
+  </view>
+</view>
+</template>

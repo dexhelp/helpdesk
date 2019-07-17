@@ -1,0 +1,20 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">helpdesk</view>
+    <view class="page__desc">欢迎体验dex制作的小工具1.0.0</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <view>
+      <view class="kind-list">
+        <block wx:for="{{list}}" wx:key="id">
+        <view class="kind-list__item">
+          <navigator url="../{{item.id}}/{{item.id}}" id="{{item.id}}" class="weui-flex kind-list__item-hd" bindtap="kindToggle">
+            <view class="weui-flex__item">{{item.name}}</view>
+            <image class="kind-list__img" src="../../images/{{item.picture}}"></image>
+          </navigator>
+        </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

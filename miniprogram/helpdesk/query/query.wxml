@@ -1,0 +1,19 @@
+<!--helpdesk/query/query.wxml-->
+<view class="page__bd page__bd_spacing">
+  <view class="kind-list">
+    <block wx:for="{{info}}" wx:key="id">
+      <view class="kind-list__item">
+        <view id="{{item._id}}" class="weui-flex kind-list__item-hd" bindtap="kindToggle">
+          <view class="weui-flex__item">{{item.info.who.classarr}}</view>
+          <view class="weui-textarea-counter">{{item.info.step}}</view>
+        </view>
+        <view wx:if="{{item.info.who.check}}">
+          <textarea class="weui-textarea" id="{{item._id}}" style="height: 3.3em" bindinput="" value="{{item.info.who.info}}" disabled="true" />
+        </view>
+        <view wx:if="{{item.info.who.check}}">
+          <button id="{{item._id}}" bindtap="closewd">关闭工单</button>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

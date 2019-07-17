@@ -1,0 +1,10 @@
+<!-- 我的手术台
+选择用户
+加载用户问题 -->
+
+<view>用户ID</view>
+<view>联系方式</view>
+<view>问题分类</view>
+<view>详细描述</view>
+
+<view>提交按钮</view>
